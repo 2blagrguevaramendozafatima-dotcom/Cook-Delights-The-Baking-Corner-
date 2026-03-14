@@ -1,0 +1,73 @@
+body {
+    background-color: #f2ede4;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0 50px;
+    line-height: 1.6;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ede8df;
+    border-radius: 50px;
+    border: 1px solid #d8d0c4;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #666;
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header nav a.linea {
+    color: #000;
+    border-bottom: 2px solid brown;
+}
+
+.subscribe {
+    background: #222;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+
+.video {
+    position: relative;
+    height: 500px;
+    width: 500px;    
+    border-radius: 10px;
+}

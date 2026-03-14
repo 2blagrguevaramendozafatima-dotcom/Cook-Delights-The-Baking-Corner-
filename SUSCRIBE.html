@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page - Cooks Delight</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-image: url('https://i.pinimg.com/736x/05/4a/12/054a12f8a146f263c298308861a14431.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 0 40px;
+        }
+
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ede8df;
+            border-radius: 50px;
+            border: 1px solid #d8d0c4;
+            padding: 14px 28px;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        header .logo {
+            font-weight: bold;
+            font-size: 18px;
+            color: #333;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #666;
+            margin: 0 15px;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        header nav a.linea {
+            color: #000;
+            border-bottom: 2px solid brown;
+        }
+
+        .subscribe {
+            background-color: #222;
+            color: white;
+            border-radius: 20px;
+            padding: 8px 20px;
+            border: none;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        
+        .main-content {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .glass-container {
+            width: 350px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            text-align: center;
+        }
+
+        h2 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            padding: 12px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 10px;
+            background: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        input:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .options {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            font-size: 11px;
+            color: white;
+        }
+
+        .options input {
+            margin-top: 0;
+            margin-right: 5px;
+            width: 14px;
+            height: 14px;
+        }
+
+        .options a {
+            text-decoration: none;
+            color: white;
+            margin-left: auto;
+        }
+
+        button[type="submit"] {
+            margin-top: 30px;
+            height: 45px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            background: #fff;
+            color: #333;
+            font-weight: bold;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .footer-text {
+            color: #fff;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+
+        .footer-text a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Cooks Delight</div>
+        
+        <nav>
+            <a href="Inicio.html">HOME</a>
+            <a href="#" >RECETAS</a>
+            <a href="#">TIPS</a>
+            <a href="ABOUT US.html">ABOUT US</a>
+        </nav>
+        
+        <div class="header-actions">
+            <button class="subscribe">SUBSCRIBE</button>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="glass-container">
+            <div class="login-box">
+                <h2>Login</h2>
+                <form action="#" method="POST">
+                    <input type="text" id="username" name="username" required placeholder="Username">
+                    <input type="password" id="password" name="password" required placeholder="Password">
+
+                    <div class="options">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Recordarme</label>
+                        <a href="#">¿Olvido tu contraseña?</a>
+                    </div>
+
+                    <button type="submit">Login</button>
+
+                    <p class="footer-text">¿No tiene una cuenta? <a href="#" id="register">Registrarse</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
